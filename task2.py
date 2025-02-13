@@ -1,16 +1,16 @@
-def typeBasedTransformer(data):
-    transformed_data = {}
+def typeBasedTransformer(input_data):
+    transformed_output = {}
     
-    for key, value in data.items():
+    for key, value in input_data.items():
         if isinstance(value, int) or isinstance(value, float):
-            transformed_data[key] = value ** 2  # Square numbers
+            transformed_output[key] = value ** 2
         elif isinstance(value, str):
-            transformed_data[key] = value[::-1]  # Reverse strings
+            transformed_output[key] = value[::-1]
         elif isinstance(value, bool):
-            transformed_data[key] = not value  # Invert boolean
+            transformed_output[key] = not value
         elif isinstance(value, list) or isinstance(value, tuple):
-            transformed_data[key] = value[::-1]  # Reverse list/tuple
+            transformed_output[key] = value[::-1]
         elif isinstance(value, dict):
-            transformed_data[key] = {v: k for k, v in value.items()}  # Swap keys and values in dict
+            transformed_output[key] = {v: k for k, v in value.items()}
 
-    return transformed_data
+    return transformed_output
