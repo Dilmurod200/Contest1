@@ -1,7 +1,7 @@
 # main.py
 from your_module import kwargsAcceptFun, typeBasedTransformer, decorator_1
 
-kwargsAcceptFun(name="Bob", age=28, city="London")
+kwargsAcceptFun(name="Dilmurod", age=20, city="Tashkent")
 
 data = {
     "num": 9,
