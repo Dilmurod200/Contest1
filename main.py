@@ -1,24 +1,20 @@
 # main.py
 from your_module import kwargsAcceptFun, typeBasedTransformer, decorator_1
 
-# Task 1: Using kwargsAcceptFun
-kwargsAcceptFun(name="Dilmurod", age=20, city="Tashkent")
+kwargsAcceptFun(name="Bob", age=28, city="London")
 
-# Task 2: Using typeBasedTransformer
 data = {
-    "num": 4,
-    "text": "hello",
+    "num": 9,
+    "text": "python",
     "flag": True,
-    "numbers_list": [1, 2, 3],
-    "nested_dict": {"a": 1, "b": 2}
+    "items": [7, 8, 9],
+    "dict_data": {"alpha": 1, "beta": 2}
 }
-transformed_data = typeBasedTransformer(data)
-print(transformed_data)
+result = typeBasedTransformer(data)
+print(result)
 
-# Task 3: Using decorator_1
 @decorator_1
-def sample_function():
-    time.sleep(2)  # Simulate a delay
+def demo_function():
+    time.sleep(2)
 
-sample_function()
-
+demo_function()
